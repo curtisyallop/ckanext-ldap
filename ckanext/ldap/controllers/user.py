@@ -87,7 +87,7 @@ class UserController(p.toolkit.BaseController):
         """
         pylons.session['ckanext-ldap-user'] = user_name
         pylons.session.save()
-        p.toolkit.redirect_to(controller='package', action='search')
+        p.toolkit.redirect_to(controller='group', action='index')
 
 
 def _ckan_user_exists(user_name):
